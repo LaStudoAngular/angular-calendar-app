@@ -1,1 +1,104 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+$primary-color: #cd3545;
+$dark-color: #333;
+$light-color: #f4f4f4;
+$link-active: #666;
+$input-color: #ccc;
+$button-color: #333;
+$white-color: #fff;
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: $dark-color;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $link-active;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+  border: 1px solid $input-color;
+  outline: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+  overflow: hidden;
+}
+
+.table {
+  th {
+    background-color: $light-color;
+  }
+}
+
+.btn {
+  background-color: $light-color;
+  cursor: pointer;
+  color: $button-color;
+  border: none;
+  font-size: 1rem;
+  padding: 0.4rem 1.2rem;
+  outline: none;
+  display: inline-block;
+  transition: opacity 0.2s;
+
+  &:disabled {
+    color: $white-color;
+    background-color: $dark-color;
+    cursor: not-allowed;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  color: $white-color;
+}
+
+.text-center {
+  text-align: center;
+}
