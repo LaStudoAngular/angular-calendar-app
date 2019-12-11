@@ -1,0 +1,19 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.selector {
+  width: 200px;
+  margin: 0 2rem;
+  text-align: center;
+}
+
+.arrow {
+  cursor: pointer;
+
+  &:hover {
+    color: darksalmon;
+  }
+}
