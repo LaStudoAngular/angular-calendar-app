@@ -1,0 +1,39 @@
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+
+  th,
+  td {
+    border: 1px solid black;
+    padding: 0.4rem 1rem;
+  }
+
+  td {
+    text-align: center;
+    transition: all 0.2s;
+
+    &.disabled {
+      opacity: 0.4;
+    }
+
+    // навешивать стили при hover только тогда, когда нет класса disabled на этом элементе
+    &:hover:not(.disabled) {
+      background-color: var(--gray-light);
+      cursor: pointer;
+    }
+  }
+}
+
+.disabled {
+  //
+}
+
+.active {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.selected {
+  color: var(--blue-color);
+}

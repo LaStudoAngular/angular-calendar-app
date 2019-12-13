@@ -4,6 +4,7 @@ import * as moment from 'moment';
 @Pipe({
   name: 'momentf',
   // очень плохо
+  // TODO: replace by filter
   pure: false,
 })
 export class MomentPipe implements PipeTransform {
