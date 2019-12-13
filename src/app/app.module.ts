@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { CalendarSelectorComponent } from './components/calendar-selector/calendar-selector.component';
 import { CalendarOrganizerComponent } from './components/calendar-organizer/calendar-organizer.component';
 import { CalendarActionsComponent } from './components/calendar-actions/calendar-actions.component';
+import { MomentPipe } from './shared/pipes/moment.pipe';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { CalendarActionsComponent } from './components/calendar-actions/calendar
     CalendarSelectorComponent,
     CalendarOrganizerComponent,
     CalendarActionsComponent,
+    MomentPipe,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
